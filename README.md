@@ -6,11 +6,7 @@
 - Host Port mapping won't work with this image, hence kill any other processes that might block the below ports
 ### To Start KAFKA and ZooKeeper:
 
-`docker run --rm -it \
-           -p 2181:2181 -p 3030:3030 -p 8081:8081 \
-           -p 8082:8082 -p 8083:8083 -p 9092:9092 \
-           -e ADV_HOST=127.0.0.1 \
-           landoop/fast-data-dev`
+`docker run --rm -it  -p 2181:2181 -p 3030:3030 -p 8081:8081  -p 8082:8082 -p 8083:8083 -p 9092:9092  -e ADV_HOST=127.0.0.1  landoop/fast-data-dev`
 
 The above must be left running for the reminder of the session. Below commands must be executed in a separate terminal 
 window.
